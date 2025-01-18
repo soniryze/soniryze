@@ -9,7 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000000; /* 배경색 검정 */
+            background: url('logo.png') no-repeat center center fixed; /* 로고를 배경으로 설정 */
+            background-size: cover; /* 배경 크기를 화면에 맞춤 */
             color: #FFFFFF; /* 폰트 흰색 */
             display: flex;
             justify-content: center;
@@ -18,22 +19,19 @@
             text-align: center;
         }
         .container {
-            width: 90%; /* 화면 크기에 맞추기 위해 컨테이너 크기를 제한 */
-            max-width: 600px; /* 최대 폭을 설정하여 너무 커지지 않도록 제한 */
+            background-color: rgba(0, 0, 0, 0.7); /* 투명한 검정 배경 */
+            padding: 2rem;
+            border-radius: 10px;
         }
         h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            font-family: Arial, sans-serif;
-        }
-        p {
-            font-family: Arial, sans-serif;
         }
         .links {
             display: flex;
-            flex-wrap: wrap; /* 버튼들이 화면 밖으로 넘치지 않도록 자동 줄바꿈 */
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 1rem; /* 버튼 사이 간격 */
+            gap: 1rem;
             margin-top: 1rem;
         }
         .link {
@@ -46,11 +44,11 @@
             font-family: Arial, sans-serif;
             transition: background-color 0.3s;
             flex: 1 0 calc(50% - 1rem); /* 각 버튼이 화면의 절반을 차지 */
-            max-width: 150px; /* 버튼이 너무 커지지 않도록 제한 */
+            max-width: 150px;
             text-align: center;
         }
         .link:hover {
-            background-color: #666666; /* 버튼 호버 시 더 밝은 회색 */
+            background-color: #666666;
         }
 
         @media (max-width: 500px) {
